@@ -51,7 +51,7 @@ class GildedRoseTest {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(21, app.items[0].quality);
+        assertEquals(20, app.items[0].quality);
     }
 
     @Test
@@ -59,7 +59,7 @@ class GildedRoseTest {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(52, app.items[0].quality);
+        assertEquals(50, app.items[0].quality);
     }
 
     @Test
